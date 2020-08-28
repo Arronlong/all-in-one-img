@@ -195,7 +195,7 @@ function imgupload(){
   //获取表单数据
   var form = new FormData(document.getElementById("form"));
   $.ajax({
-    url:api,
+    url:"../upload/"+api,
     type:"post",
     data:form,
     cache: false,
